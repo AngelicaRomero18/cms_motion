@@ -1,0 +1,19 @@
+@import "../../../scss/variables";
+
+.tryCreateInput {
+  border: 2px solid #c6007e;
+}
+.tryCreateText {
+  color: #c6007e;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+}
+input {
+  color: #c5c5c5;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 12px;
+  height: 36px;
+}

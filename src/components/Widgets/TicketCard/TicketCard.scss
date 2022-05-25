@@ -1,0 +1,84 @@
+@import "../../../scss/variables";
+
+.TicketCard {
+  width: 90%;
+  height: 200px;
+  box-shadow: 0px 0px 16px rgba(140, 140, 140, 0.5);
+  border-radius: 20px;
+  margin: 16px auto;
+  cursor: pointer;
+  .cardTableSub {
+    background-color: #fff;
+    height: 200px;
+    width: 95%;
+    border-radius: 20px 0px 0px 20px;
+    .cardTableSubCont {
+      height: 85%;
+      justify-content: space-between;
+      padding: 16px 32px;
+      .cardTableSubCont-center {
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .number {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 29px;
+        }
+        .category {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: end;
+          color: #8c8c8c;
+        }
+      }
+      .name {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .email {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #8c8c8c;
+      }
+      .description {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #8c8c8c;
+      }
+      .dateD {
+        font-family: $Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.75rem;
+        line-height: 16px;
+
+        color: #8c8c8c;
+      }
+      .dateY {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 16px;
+
+        color: #8c8c8c;
+      }
+    }
+  }
+}

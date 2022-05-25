@@ -1,0 +1,17 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .st0 {
+            fill: current;
+        }
+    </style>
+    <g clip-path="url(#clip0_sms)">
+        <path
+            d="M240 288V360C240 363.2 239.6 366 238.8 369.2C234.8 386.8 218.8 400.4 200 400.4H40C20.8 400.4 5.2 387.2 1.2 369.2C0.4 366 0 363.2 0 360V40C0 18 18 0 40 0H200C219.2 0 235.6 13.6 239.2 32H40C35.6 32 32 35.6 32 40V352H208V288H240ZM320 144H160V176H320V144ZM368 96H112V208V242.8L121.2 233.6L130.4 224.4H144H368V96ZM400 64V256H144L80 320V208V64H400Z"
+            class="st0" />
+    </g>
+    <defs>
+        <clipPath id="clip0_sms">
+            <rect width="400" height="400" class="st0" />
+        </clipPath>
+    </defs>
+</svg>

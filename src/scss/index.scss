@@ -1,0 +1,498 @@
+/*** PALETA DE COLORES ***/
+
+/* Colores Primarios */
+
+$blue1: #00249c; /*AZÚL*/
+.blue1 {
+  color: #00249c;
+  fill: #00249c;
+}
+
+$red1: #c6007e; /*MAGENTA*/
+.red1 {
+  color: #c6007e;
+  fill: #c6007e;
+}
+
+/* Colores Destacados*/
+
+$sky1: #01bebd; /*CIELO*/
+.sky1 {
+  color: #01bebd;
+  fill: #01bebd;
+}
+
+$red2: #d4409e; /*MAGENTA 75*/
+.red2 {
+  color: #d4409e;
+  fill: #d4409e;
+}
+
+/* Colores Neutros */
+
+$gray1: #8c8c8c; /*GRIS*/
+.gray1 {
+  color: #8c8c8c;
+  fill: #8c8c8c;
+}
+
+$gray2: #a8a8a8; /*GRIS 75*/
+.gray2 {
+  color: #a8a8a8;
+  fill: #a8a8a8;
+}
+
+$gray3: #c5c5c5; /*GRIS 50*/
+.gray3 {
+  color: #c5c5c5;
+  fill: #c5c5c5;
+}
+
+/* Colores Claros */
+
+$sky2: #40cee4; /*CIELO 75*/
+.sky2 {
+  color: #40cee4;
+  fill: #40cee4;
+}
+
+$red3: #e280be; /*MAGENTA 50*/
+.red3 {
+  color: #e280be;
+  fill: #e280be;
+}
+
+$gray4: #e2e2e2; /*GRIS 25*/
+.gray4 {
+  color: #e2e2e2;
+  fill: #e2e2e2;
+}
+
+/* Otros Colores */
+
+$blue80: #00249c80; /*AZÚL 80 T*/
+.blue80 {
+  color: #00249c80;
+}
+
+$blue60: #00249c60; /*AZÚL 60 T*/
+.blue60 {
+  color: #00249c60;
+}
+
+$blue40: #00249c40; /*AZÚL 40 T*/
+.blue40 {
+  color: #00249c40;
+}
+
+$blue20: #00249c20; /*AZÚL 20 T*/
+.blue20 {
+  color: #00249c20;
+}
+
+$gray80: #8c8c8c80; /*GRIS 80 T*/
+.gray80 {
+  color: #8c8c8c80;
+}
+
+$gray60: #8c8c8c60; /*GRIS 60 T*/
+.gray60 {
+  color: #8c8c8c60;
+}
+
+$gray40: #8c8c8c40; /*GRIS 40 T*/
+.gray40 {
+  color: #8c8c8c40;
+}
+
+$gray20: #8c8c8c20; /*GRIS 20 T*/
+.gray20 {
+  color: #8c8c8c20;
+}
+
+/*BLANCO*/
+$white: #ffffff; /*BLANCO*/
+.white {
+  color: white;
+}
+
+$white95: #ffffff95; /*BLANCO 95 T*/
+.white95 {
+  color: #ffffff95;
+}
+
+$white90: #ffffff90; /*BLANCO 90 T*/
+.white90 {
+  color: #ffffff90;
+}
+
+$white80: #ffffff80; /*BLANCO 80 T*/
+.white80 {
+  color: #ffffff80;
+}
+
+$white70: #ffffff70; /*BLANCO 70 T*/
+.white70 {
+  color: #ffffff70;
+}
+
+$white60: #ffffff60; /*BLANCO 60 T*/
+.white60 {
+  color: #ffffff60;
+}
+
+$white50: #ffffff50; /*BLANCO 50 T*/
+.white50 {
+  color: #ffffff50;
+}
+
+$white40: #ffffff40; /*BLANCO 40 T*/
+.white40 {
+  color: #ffffff40;
+}
+
+$white30: #ffffff30; /*BLANCO 30 T*/
+.white30 {
+  color: #ffffff30;
+}
+
+$white20: #ffffff20; /*BLANCO 20 T*/
+.white20 {
+  color: #ffffff20;
+}
+
+$white10: #ffffff10; /*BLANCO 10 T*/
+.white10 {
+  color: #ffffff10;
+}
+
+$transparente: #ffffff00; /*TRANSPARENTE*/
+.transparente {
+  color: #ffffff00;
+}
+
+button,
+a,
+input {
+  /* THIS DISABLES THE PRESET OPTIONS */
+  appearance: inherit;
+  font: inherit;
+  font-size: 100%;
+  background-color: inherit;
+  background-image: inherit;
+  border-style: inherit;
+  outline: inherit;
+}
+button,
+a[type="button"],
+input[type="submit"],
+input[type="button"],
+input[type="file"] {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  color: $gray1;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.6em 1.6em;
+  border-radius: 1em;
+  border: 0.15em solid;
+  border-color: $gray60;
+  box-shadow: 0 0 1em $gray60;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition-property: box-shadow, border-color, background-color, padding,
+    transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+
+  &:disabled,
+  &.disabled,
+  & :disabled,
+  & .disabled {
+    background: $gray20;
+    color: white;
+    border-color: $transparente;
+    cursor: not-allowed;
+    box-shadow: none;
+    transition-property: inherit;
+    transition-duration: inherit;
+  }
+
+  &.icon-btn {
+    padding: inherit;
+    border: inherit;
+    border-color: inherit;
+    box-shadow: inherit;
+    transform: scale(0.8);
+    transition-property: transform;
+
+    & img {
+      margin: auto;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &.btn1 {
+    box-shadow: 0 0 1em $gray80;
+    border: none;
+    background: linear-gradient(135deg, $blue1, $sky1);
+    color: white;
+  }
+
+  &.btn2 {
+    color: $sky2;
+    border-color: $sky2;
+  }
+
+  &.btn3 {
+    box-shadow: 0 0 1em $gray80;
+    border: none;
+    background: linear-gradient(135deg, $red1 50%, $red3);
+    color: white;
+  }
+
+  &.btn4 {
+    color: $red1;
+    border-color: $red2;
+  }
+
+  &.btn1,
+  &.btn3 {
+    padding: 0.75em 1.75em;
+
+    &:disabled,
+    &.disabled,
+    & :disabled,
+    & .disabled {
+      padding: 0.75em 1.75em;
+      background: $gray40;
+      color: white;
+      box-shadow: none;
+    }
+  }
+
+  &.btn2,
+  &.btn4 {
+    &:disabled,
+    &.disabled,
+    & :disabled,
+    & .disabled {
+      background: $transparente;
+      color: $gray40;
+      border-color: $gray40;
+    }
+  }
+
+  &.btn1-dark {
+    border: none;
+    background: linear-gradient(135deg, $sky1 50%, $sky2);
+    color: white;
+  }
+
+  &.btn2-dark {
+    border-color: $sky1;
+    color: $sky2;
+  }
+
+  &.btn3-dark {
+    border: none;
+    background: linear-gradient(135deg, $red1 50%, $red2);
+    color: white;
+  }
+
+  &.btn4-dark {
+    border-color: $white90;
+    color: $white90;
+  }
+
+  &.btn1-dark,
+  &.btn3-dark {
+    box-shadow: 0 0 1rem $blue1;
+    padding: 0.75em 1.75em;
+
+    &:disabled,
+    &.disabled,
+    & :disabled,
+    & .disabled {
+      padding: 0.75em 1.75em;
+      box-shadow: none;
+      background: $blue60;
+      color: $sky1;
+    }
+  }
+
+  &.btn2-dark,
+  &.btn4-dark {
+    box-shadow: 0 0 1rem $blue1;
+
+    &:disabled,
+    &.disabled,
+    & :disabled,
+    & .disabled {
+      box-shadow: none;
+      background: $transparente;
+      color: $sky1;
+      border-color: $sky1;
+    }
+  }
+}
+.btn4 {
+  .adjuntar-btn {
+    fill: $red1;
+  }
+}
+.btn4:hover {
+  .adjuntar-btn {
+    fill: #ffffff;
+  }
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="list"],
+input[type="search"],
+select {
+  display: inline-block;
+  color: $gray1;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 1em;
+  border: 0.15em solid $gray40;
+}
+
+input[type="textarea"] {
+  color: $gray1;
+  height: auto;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 0.75em 1.75em;
+  border-radius: 1em;
+  border: 0.15em solid $gray40;
+  overflow: auto;
+}
+
+input[type="search"] {
+  background-image: url(https://svgshare.com/i/Wux.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 1.5em;
+  background-origin: content-box;
+  padding-right: 1em;
+}
+
+::placeholder {
+  color: $gray60;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: $gray1 !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+input[type="radio"] {
+  appearance: auto;
+  width: 1rem;
+  display: inline;
+
+  label {
+    display: inline;
+  }
+}
+
+///////////*FORM CLASSES*///////////
+
+.inputs-container {
+  width: 100%;
+  gap: 2vw;
+
+  input {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  input[type="submit"] {
+    width: initial;
+  }
+}
+
+.input-archivo {
+  & > input {
+    display: none;
+  }
+
+  & > label {
+    cursor: pointer;
+  }
+}
+
+fieldset {
+  padding-block-start: inherit;
+  padding-inline-start: inherit;
+  padding-inline-end: inherit;
+  padding-block-end: inherit;
+  min-inline-size: inherit;
+  border: none;
+}
+
+.matx-loader {
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  right: 0;
+  top: calc(50% - 20px);
+  margin: auto;
+}
+.matx-loader img {
+  position: absolute;
+  height: 25px;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.matx-loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border: 3.4px solid #7467ef;
+  border-radius: 50%;
+  animation: matx-loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #7467ef transparent transparent transparent;
+}
+.matx-loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.matx-loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.matx-loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes matx-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

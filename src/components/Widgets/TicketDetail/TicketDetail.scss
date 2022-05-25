@@ -1,0 +1,250 @@
+@import "../../../scss/variables";
+
+.TicketDetail {
+  background-color: rgba(0, 36, 156, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+  .frontModal {
+    background-color: #fff;
+    width: 70%;
+    height: 70%;
+    border-radius: 32px;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    .frontModal-content {
+      margin: 2rem;
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      gap: 30px;
+      .header {
+        height: 30px;
+        .title {
+          font-family: $Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 29px;
+
+          color: $gray1;
+        }
+      }
+      .body {
+        width: 100%;
+        height: calc(100% - 60px);
+        gap: 15%;
+        .content-description {
+          width: 50%;
+          justify-content: space-between;
+          gap: 10px;
+          .content-asunto {
+            .asunto {
+              font-family: $Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 1rem;
+              line-height: 17px;
+              /* identical to box height */
+
+              color: $gray3;
+            }
+          }
+          .content-ticketDescription {
+            height: -webkit-fill-available;
+            .ticketDescription {
+              font-family: $Ubuntu;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 0.75rem;
+              line-height: 14px;
+
+              color: $gray1;
+
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+          .content-create_date {
+            .create_date {
+              font-family: $Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 0.75rem;
+              line-height: 15px;
+              /* identical to box height */
+
+              color: $gray1;
+            }
+          }
+        }
+        .content-chat {
+          width: 35%;
+          gap: 10px;
+          .content-messages {
+            border: 1px solid $gray3;
+            border-radius: 20px;
+            height: calc(100% - 50px);
+            width: 100%;
+            overflow-y: auto;
+            .margin-messages {
+              margin: 1rem;
+              align-items: flex-end;
+              gap: 20px;
+              .messages {
+                width: 100%;
+                align-items: flex-end;
+                .box-messages {
+                  gap: 10px;
+                  width: 80%;
+                  .message {
+                    background-color: $sky2;
+                    border-radius: 20px;
+                    p {
+                      margin: 5px 10px;
+                      font-family: $Ubuntu;
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 12px;
+                      line-height: 11px;
+
+                      color: $white;
+                    }
+                  }
+                  .message.active {
+                    background-color: $red1;
+                  }
+                  .info-message {
+                    font-family: $Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 9px;
+                    line-height: 11px;
+                    color: $gray2;
+                    justify-content: space-between;
+                  }
+                }
+              }
+              .messages.own {
+                align-items: flex-start;
+              }
+            }
+          }
+          .content-send {
+            height: 40px;
+            width: 100%;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            .send {
+              height: 100%;
+              width: calc(100% - 60px);
+              border: 1px solid $gray3;
+              border-radius: 20px;
+            }
+            .button-send {
+              background: linear-gradient(
+                98.81deg,
+                #00249c 0.21%,
+                #40cee4 100.21%
+              );
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              .ico-send {
+                width: 60%;
+                height: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .backModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 98;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile-big) {
+  .TicketDetail {
+    .frontModal {
+      .frontModal-content {
+        .header {
+          .title {
+          }
+        }
+        .body {
+          width: 100%;
+          flex-direction: column;
+          .content-description {
+            height: 30%;
+            width: 100%;
+            .content-asunto {
+              .asunto {
+              }
+            }
+            .content-ticketDescription {
+              .ticketDescription {
+              }
+            }
+            .content-create_date {
+              .create_date {
+              }
+            }
+          }
+          .content-chat {
+            width: 100%;
+            height: 70%;
+            .content-messages {
+              .margin-messages {
+                .messages {
+                  .box-messages {
+                    .message {
+                      p {
+                      }
+                    }
+                    .message.active {
+                    }
+                    .info-message {
+                    }
+                  }
+                }
+                .messages.own {
+                }
+              }
+            }
+            .content-send {
+              .send {
+              }
+            }
+          }
+        }
+      }
+    }
+    .backModal {
+    }
+  }
+}

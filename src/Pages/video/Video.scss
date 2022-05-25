@@ -1,0 +1,123 @@
+@import "../../../scss/variables";
+
+.Video.Desktop {
+  width: calc(100% - 230px);
+  height: 100%;
+  overflow-y: auto;
+  .Video-content {
+    height: calc(100% - 64px);
+    margin: 32px;
+    .mediaplayer-content {
+      width: 60%;
+      height: 100%;
+      .mediaplayer {
+        width: 100%;
+        height: 70%;
+        .video-player {
+          width: 100%;
+          height: 100%;
+          border-radius: 16px;
+        }
+      }
+      .description {
+        height: 30%;
+        .description-content {
+          margin: 16px 0px;
+          box-shadow: 0px 0px 15px $gray3;
+          border-radius: 16px;
+          height: calc(100% - 32px);
+          .text {
+            height: 100%;
+            .text-content {
+              margin: 16px;
+              grid-gap: 10px;
+              .header-text {
+                align-items: center;
+                justify-content: space-between;
+                .text-title {
+                  font-size: 24px;
+                  font-weight: bold;
+                  font-family: $Montserrat;
+                  color: $blue1;
+                }
+                .salir-ico {
+                  fill: $gray1;
+                  cursor: pointer;
+                }
+                .salir-ico:hover {
+                  fill: $red1;
+                }
+              }
+              .text-app {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: $Montserrat;
+                color: $gray3;
+              }
+              .text-description {
+                font-size: 14px;
+                font-weight: 300;
+                font-family: $Ubuntu;
+                color: $gray3;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sections {
+      width: 40%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      .sections-content {
+        margin: 16px;
+        height: calc(100% - 32px);
+        grid-gap: 20px;
+        .section-video {
+          grid-gap: 10px;
+          box-shadow: 0px 0px 15px $gray3;
+          background-color: $sky1;
+          border-radius: 16px;
+          height: 85px;
+          .sections-background {
+            background-color: $white;
+            margin-left: 10px;
+            width: calc(100% - 10px);
+            border-radius: 0px 16px 16px 0px;
+            justify-content: space-between;
+            .section-miniature {
+              width: 100px;
+              height: 85px;
+              border-radius: 0px 16px 16px 0px;
+            }
+            .section-text {
+              margin: 16px;
+              justify-content: space-between;
+              grid-gap: 5px;
+              width: calc(100% - 100px - 32px);
+              .section-title {
+                color: $sky1;
+                font-size: 24px;
+                font-weight: bold;
+                font-family: $Montserrat;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                height: -webkit-fill-available;
+              }
+              .section-description {
+                color: $gray2;
+                font-size: 12px;
+                font-family: $Ubuntu;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                height: -webkit-fill-available;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

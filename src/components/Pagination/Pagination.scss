@@ -1,0 +1,36 @@
+@import "../../scss/variables";
+
+.filter {
+  color: #8c8c8c;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  .canP {
+    border-radius: 12px;
+    border: 1px solid #c5c5c5;
+    padding: 8px 16px;
+    margin-left: 8px;
+    background-color: #fff;
+    outline: "none";
+  }
+  .search {
+    width: 100px;
+    height: 36px;
+
+    border: 1px solid #c5c5c5;
+
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+  .marginRL {
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+}

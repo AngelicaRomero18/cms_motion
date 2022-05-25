@@ -1,0 +1,219 @@
+@import "../../scss/variables";
+
+.SignIn {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  color: rgb(139, 140, 140);
+  height: 100%;
+  margin: 0;
+  .bg-photo {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.75;
+    mix-blend-mode: overlay;
+    z-index: 1;
+  }
+  .input-form {
+    border: 1px solid $gray4;
+  }
+  .button-form {
+    border-radius: 20px;
+    text-transform: initial;
+    font-family: $Ubuntu;
+    font-weight: 600;
+    font-size: 14px;
+    /*Clase para el botón de la tarjeta del login*/
+    height: 30px;
+    padding: 0% 10%;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(
+      to bottom right,
+      rgb(198, 0, 126),
+      rgba(198, 0, 126, 75%)
+    );
+    box-shadow: 0px 0px 4px 2px rgba(197, 197, 197, 50%);
+    color: white;
+    margin: 5px 0;
+    font-family: $Ubuntu;
+    transition: 0.2s ease-in-out;
+  }
+
+  .button-form:hover {
+    /*Clase para el el hover del botón de la tarjeta del login*/
+    cursor: pointer;
+    height: 40px;
+    padding: 0px 15%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 4px rgb(197, 197, 197);
+  }
+  .register-option {
+    text-decoration: underline;
+  }
+}
+
+.bg-gradient {
+  /*Clase para la gradación de fondo*/
+  position: relative;
+  background: linear-gradient(
+    to top left,
+    rgb(1, 190, 219),
+    rgb(0, 71, 187) 60%
+  );
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  .form {
+    /*Clase para la tarjeta de login*/
+    box-shadow: 0px 0px 0px 0px rgba(0, 71, 187, 0%);
+    background: white;
+    position: fixed;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+    line-height: 38px;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: 0.5s ease-in-out;
+    .input-form {
+      /*Clase para los inputs del login*/
+      width: 245px;
+      padding: 6px 10px;
+      border: 0;
+      border: solid 2px rgb(226, 226, 226);
+      border-radius: 5px;
+      border-color: #e2e2e2;
+      background-color: white;
+      color: rgb(139, 140, 140);
+      font-family: "Ubuntu Light";
+      font-weight: 100;
+      font-size: 16px;
+      margin: auto;
+      right: 0;
+      left: 0;
+    }
+    form input:selected {
+      color: rgb(139, 140, 140);
+    }
+
+    form input:hover {
+      /*Clase para el hover en los inputs del login*/
+    }
+
+    form input:focus {
+      /*Clase para los inputs del login*/
+      outline: none;
+      color: rgb(139, 140, 140);
+    }
+
+    ::placeholder {
+      /*Clase para los textos iniciales en los inputs*/
+      color: rgb(197, 197, 197);
+      font-family: "Ubuntu Light";
+    }
+
+    .form-selections {
+      /*Clase para la parte inferior de la tarjeta*/
+      text-align: center;
+      line-height: 2.5em;
+      margin-top: 1em;
+    }
+
+    .forgotten-password {
+      /*Clase para el link de recuperar contraseña*/
+      color: rgb(197, 197, 197);
+    }
+
+    .forgotten-password:hover {
+      color: rgb(139, 140, 140);
+    }
+
+    .register-option {
+      /*Clase para el link de registro*/
+      color: rgb(139, 140, 140);
+    }
+
+    .register-option:hover {
+      color: rgb(198, 0, 126);
+      font-family: "Ubuntu Bold";
+    }
+  }
+
+  .form:hover {
+    box-shadow: 0px 0px 20px 10px rgba(0, 71, 187, 75%);
+    padding: 40px;
+  }
+}
+
+.bg-gradient-2 {
+  /*Clase para la gradación vertical que hace legible el logo*/
+  position: absolute;
+  background: linear-gradient(
+    to top,
+    rgba(1, 190, 219, 0),
+    rgb(0, 71, 187) 90%
+  );
+  height: 75%;
+  width: 100%;
+  top: 0px;
+  opacity: 0.8;
+  z-index: 2;
+}
+.logo-motion {
+  /*Clase para el logo*/
+  position: fixed;
+  top: 5%;
+  width: 190px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  transition: 0.4s ease-in-out;
+}
+
+.logo-motion:hover {
+  width: 220px;
+}
+@media screen and (min-width: 750px) and (orientation: portrait) {
+  .logo-motion {
+    /*Clase para el logo*/
+    top: 10%;
+    width: 40%;
+  }
+
+  .logo-motion:hover {
+    width: 50%;
+  }
+
+  .form:hover {
+    box-shadow: 0px 0px 40px 20px rgba(0, 71, 187, 75%);
+    padding: 40px;
+  }
+}
+
+/******************* FOOTER *******************/
+
+.footer {
+  /*Esta es la clase del footer*/
+  color: white;
+  text-align: center;
+  position: fixed;
+  margin: auto;
+  text-shadow: 0px 0px 6px rgb(0, 71, 187);
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  z-index: 4;
+}
+
+.footer a {
+  color: white;
+}

@@ -1,0 +1,50 @@
+@import "../../../scss/variables";
+
+.backModal {
+  background-color: rgba(0, 36, 156, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+}
+.frontModal {
+  background-color: #fff;
+  width: 80%;
+  height: 180px;
+  border-radius: 32px;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  margin: 50px 32px;
+  height: -webkit-fill-available;
+  justify-content: space-between;
+}
+title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  text-align: center;
+
+  color: #8c8c8c;
+  margin-top: 20px;
+}
+.logo {
+  width: 64px;
+  height: 64px;
+}
+.error {
+  fill: #c6007e;
+}

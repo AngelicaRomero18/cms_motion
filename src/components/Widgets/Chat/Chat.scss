@@ -1,0 +1,48 @@
+@import "../../../scss/variables";
+
+.Chat {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  .Chat-icoMenu {
+    background-color: $sky2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px $sky1;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .Chat-input-content {
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    height: 32px;
+    width: 250px;
+    border-radius: 0px 0px 0px 20px;
+    border: 2px solid $gray3;
+    border-top: 0px;
+    background-color: $white;
+    .Chat-input {
+      border: none;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .Chat-output {
+    height: 150px;
+    position: absolute;
+    width: 250px;
+    border: 2px solid $gray3;
+    top: -150px;
+    right: 30px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: $white;
+  }
+}
